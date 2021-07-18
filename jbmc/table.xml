@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<table>
+<result filename="results/Tasks_JBMC.2021-07-18_23-43-10.results.SV-COMP21_assert_java.ReachSafety-Java.xml">
+    <column title="status" displayTitle="Status" />
+    <column title="cputime" displayTitle="CPU Time" />
+    <column title="walltime" displayTitle="Wall Time" />
+    <column title="memory" displayTitle="Memory" sourceUnit="B" displayUnit="MB" />
+</result>
+<result filename="results/Tasks_JBMCWitnessValidator.2021-07-18_23-45-42.results.SV-COMP21_assert_java.ReachSafety-Java.xml">
+    <column title="status" displayTitle="Status" />
+    <column title="cputime" displayTitle="CPU Time" />
+    <column title="walltime" displayTitle="Wall Time" />
+    <column title="memory" displayTitle="Memory" sourceUnit="B" displayUnit="MB" /> 
+</result>
+</table>

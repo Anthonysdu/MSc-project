@@ -1,0 +1,28 @@
+CPROVER is a framework of software analysis tools. See https://www.cprover.org/
+for further information about the tools, publications, and the pointers to
+source code.
+
+This archive contains the following files:
+
+- jbmc-binary: this is the actual verification tool. It takes Java bytecode
+  (class files) as input and checks the properties specified by command-line
+  flags.
+
+- jbmc: this wrapper script invokes jbmc-binary, parsing the property file to
+  pass the correct flags to jbmc-binary and returning the correct return codes
+  for SV-COMP.
+
+The binaries were compiled on Ubuntu 20.04.1 LTS; the binaries
+should be self-hosting on similar operating systems.  The upstream URL, if
+you wish to compile it yourself, is https://github.com/diffblue/cbmc
+
+To use the tool, run the tool passing a class or jar file as argument.
+Compile sources with Java 8. Using -g is recommended to obtain more
+readable counterexample traces.
+
+For SV-COMP, use the wrapper script provided in this distribution, which takes
+the following options:
+  <path(s)> to sources
+  --32 or --64: set the bit width
+  --propertyfile <file>: read SV-COMP property specification from <file>
+  --graphml-witness <file>: write SV-COMP witness to <file>
