@@ -5,8 +5,7 @@ https://sv-comp.sosy-lab.org/2021/systems.php
 
 What's new:
 
-1.
-jbmc/Wit4JBMC.py: witness validation script for java.It takes a witness file and java files as input.
+1. jbmc/Wit4JBMC.py: witness validation script for java.It takes a witness file and java files as input.
 Run it with the command:
 ./Wit4JBMC.py --witness witness.GraphML *.java
 or
