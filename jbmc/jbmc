@@ -53,11 +53,11 @@ run()
     fi
   fi
   # Assertion failure found
-#  if [ $ECR -eq 1 ] ; then
-  #  EC=10
-   # mv $LOG.latest $LOG.ok
-   # echo "EC=$EC" >> $LOG.ok
-  #fi
+  if [ $ECR -eq 1 ] ; then
+    EC=10
+    mv $LOG.latest $LOG.ok
+    echo "EC=$EC" >> $LOG.ok
+  fi
   # No assertion failure, but deterministic
   if [ $ECR -eq 0 ] ; then
     if [ $HAS_NONDET -eq 0 ] ; then
