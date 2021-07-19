@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<benchmark tool="WitForJBMC" timelimit="15s" memlimit="15 GB" cpuCores="8">
+
+<rundefinition name="SV-COMP21_assert_java">
+  <option name="--witness">results/Tasks_JBMC.2021-07-19_14-27-51.files/${rundefinition_name}/${taskdef_name}/witness.GraphML</option>
+  <tasks name="ReachSafety-Java">
+    <includesfile>sv-benchmarks/java/ReachSafety-Java.set</includesfile>
+
+    <propertyfile>sv-benchmarks/java/properties/assert.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+</benchmark>

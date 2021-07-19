@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool="jbmc" timelimit="15s" memlimit="15 GB" cpuCores="8">
+
+<rundefinition name="SV-COMP21_assert_java">
+  <option name="--graphml-witness">witness.GraphML</option>
+  <tasks name="ReachSafety-Java">
+    <includesfile>sv-benchmarks/java/ReachSafety-Java.set</includesfile>
+<!--    <includesfile>sv-benchmarks/java/temp.set</includesfile>-->
+    <propertyfile>sv-benchmarks/java/properties/assert.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+</benchmark>
+
