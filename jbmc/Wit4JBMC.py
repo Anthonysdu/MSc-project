@@ -21,7 +21,9 @@ def last_str(str):
 try:
  #missing witness or java files
  if len(sys.argv) <= 3:
-  exit(1)
+  if sys.argv[1] == '--version':
+   print('1.0')
+  exit(0)
  else:
   witness_File_Dir = sys.argv[2]
   benchmarks_dir = []
